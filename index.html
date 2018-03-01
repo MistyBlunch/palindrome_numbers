@@ -30,39 +30,38 @@
     </form>
 
 <script type="text/javascript">
-    function polindromo_palabra(){
-        var word = (document.getElementById("txtbox").value);
-        // word = word.toString; -->No es necesario ya que el value del input es "text"
-        var long = word.length;
-        var reverse = "";
+function polindromo_palabra(){
+    var word = (document.getElementById("txtbox").value);
+    // word = word.toString; -->No es necesario ya que el value del input es "text"
+    var long = word.length;
+    var reverse = "";
 
-        if(long==0){
-            alert("No se ingresó ningún valor");
-	    }else if(long<2){
-            alert("Ingrese un valor con más de un dígito");
-            document.getElementById("txtbox").value = "";
-        }else{
-            for(var i=long-1; i>=0; i--){
-                reverse += word.charAt(i);
-            }
-            if(word != reverse){
-                var no = "No es palindromo";
-                document.getElementById("result").innerHTML = no;
-            }else{
-                var si = "Es palindromo";
-                document.getElementById("result").innerHTML = si;
-            }
-        }
-            
-    }
-
-    function borrar_palabra(){
+    if(long==0){
+        alert("No se ingresó ningún valor");
+    }else if(long<2){
+        alert("Ingrese un valor con más de un dígito");
         document.getElementById("txtbox").value = "";
-        
-        document.getElementById("result").innerHTML = "";
+    }else{
+        for(var i=long-1; i>=0; i--){
+            reverse += word.charAt(i);
+        }
+        if(word != reverse){
+            var no = "No es palindromo D:";
+            document.getElementById("result").innerHTML = no;
+        }else{
+            var si = "Es palindromo :D";
+            document.getElementById("result").innerHTML = si;
+        }
     }
-</script>
+        
+}
 
+function borrar_palabra(){
+    document.getElementById("txtbox").value = "";
+    
+    document.getElementById("result").innerHTML = "";
+}
+</script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

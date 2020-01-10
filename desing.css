@@ -1,29 +1,31 @@
+body {
+  margin: 0;
+}
 
-body{
-    margin: 20px 30px 20px 30px;
+header .container-fluid {
 }
 
 h1 {
-    background-color: seashell; 
-    padding: 50px 30px 50px 80px;
-
-    color: pink;
-    text-align: center;
+  padding: 30px 0;
+  background-color: seashell;
+  color: pink;
+  text-align: center;
 }
 
 p {
-    margin: 10px 50px 20px 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+  margin: 10px 50px 20px 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
 }
 
-.col-xs-4{
-    margin: 10px 35px 10px 20px ; 
-    padding: 30px 30px 10px 20px;
-    text-align: left;
+.col-xs-4 {
+  margin: 10px 35px 10px 20px;
+  padding: 30px 30px 10px 20px;
+  text-align: left;
 }
 
-.btn{
-    margin: 10px 30px 10px 0px;
+.btn {
+  margin: 0.5rem auto;
 }
-
